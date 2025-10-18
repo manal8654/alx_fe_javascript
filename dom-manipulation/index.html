@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Quote Generator</title>
+</head>
+<body>
+  <h1>Dynamic Quote Generator</h1>
+
+  <!-- ===== Quote Display ===== -->
+  <div id="quote-box">
+    <p id="quote-text">Click below to show a quote</p>
+    <p id="quote-category"></p>
+  </div>
+
+  <button id="show-quote">Show New Quote</button>
+
+  <div id="add-quote-section"></div>
+
+  <section id="filter-section">
+    <h2>Filter by Category</h2>
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+    </select>
+  </section>
+
+  <section id="import-export">
+    <h2>Import / Export Quotes</h2>
+    <button id="export-btn">Export Quotes</button>
+    <input type="file" id="import-file" accept="application/json" />
+  </section>
+
+  <!-- ===== Task 3: Server Sync Section ===== -->
+  <section id="server-sync">
+    <h2>Server Sync</h2>
+    <button id="sync-btn">Sync Quotes with Server</button>
+    <p id="sync-status"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
